@@ -1,0 +1,22 @@
+{
+    "image2": {
+        "data": "hwQQABAAAAAAAO4OiO7uAADsu+t3xusOwExEuy5mvg7AREVE7nLoy7xERETrYsjLTERERORizMRMREVE5HLsxEtERETkcujES0VEVORy6ORLRERE5GLs5EtERETkYuzku1REROtyzOSwRFRE7mLo5LBLRLQuxr4OAOxL63bM6w4AAOwOiO7uAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Burger"
+    },
+    "image3": {
+        "data": "hwQYABgAAAAAAAD/DwAAAAAAAAAA8P///gAAAAAAAAAA//7/7w8A/wAAAAAA7/7+7v7//wAAAADw7v7yRC70/wAAAADw7v7y1C70DwAAAADw7u/yTiT0DwAAAAD/7u//uy3+/wAAAAAv/y7v/+3k/wAAAADwIi7v1O3kDwAAAADwLy7v1N7tAAAAAAAA/y7+7t7tAAAAAAAA8O/y/uAOAAAAAAAAAPD/D8zMDAAAAAAAAAAAAMDNAAAAAAAAAAAAAMDNAAAAAAAAAAAAAMDNAAAAAAAAAAAAAMDNAAAAAAAAAAAAAMANAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "EvilPerson"
+    },
+    "image1": {
+        "data": "hwQOABAAAADw/wAAAAAAAP////8P4EQA///D//9OTQD/z8P89P//APA7zLzRvmP/z8zM9N80Y//PzExE3TRjD8/MTETdNGMPz8zM9N80Y//wO8y80b5j///Pw/z0//wA///D//9OTQD/////D+BEAPD/AAAAAAAA",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Hero"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
