@@ -3,11 +3,11 @@ def on_on_overlap(sprite2, otherSprite2):
 sprites.on_overlap(SpriteKind.enemy, SpriteKind.player, on_on_overlap)
 
 def on_countdown_end():
-    game.game_over(False)
+    game.game_over(True)
 info.on_countdown_end(on_countdown_end)
 
 def on_on_overlap2(sprite22, otherSprite22):
-    info.change_countdown_by(-10)
+    info.change_countdown_by(-5)
     sprites.destroy(otherSprite22)
     sprite22.say_text("Got it!")
 sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_on_overlap2)
@@ -133,15 +133,15 @@ NewFood = sprites.create(assets.image("""
 New_Food2 = sprites.create(assets.image("""
     Burger
 """), SpriteKind.food)
-NewFood.x = randint(10, 150)
-NewFood.y = randint(10, 150)
-New_Food2.x = randint(10, 150)
-New_Food2.y = randint(10, 150)
+NewFood.x = randint(10, 100)
+NewFood.y = randint(10, 120)
+New_Food2.x = randint(10, 100)
+New_Food2.y = randint(10, 120)
 info.set_score(0)
 info.start_countdown(25)
-EvilPerson1.x = randint(1, 1)
+EvilPerson1.x = randint(10, 120)
 EvilPerson1.y = randint(1, 1)
-EvilPerson2.x = randint(80, 80)
-EvilPerson2.y = randint(80, 80)
+EvilPerson2.x = randint(10, 120)
+EvilPerson2.y = randint(1, 1)
 EvilPerson1.follow(NewSprite, 80)
-EvilPerson2.follow(NewSprite, 80)
+EvilPerson2.follow(NewSprite, 60)
