@@ -5,13 +5,21 @@ info.onCountdownEnd(function on_countdown_end() {
     game.gameOver(true)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function on_on_overlap2(sprite22: Sprite, otherSprite22: Sprite) {
+    
     info.changeCountdownBy(-5)
     sprites.destroy(otherSprite22)
     sprite22.sayText("Got it!")
+    NewFood3 = sprites.create(assets.image`
+        Burger
+    `, SpriteKind.Food)
+    NewFood.y = randint(10, 120)
+    NewFood.x = randint(10, 100)
 })
+let NewFood3 : Sprite = null
+let NewFood : Sprite = null
 game.showLongText("Welcome to my game!", DialogLayout.Center)
 pause(100)
-game.showLongText("You are in a small room, and there is no escape. Stay alive for 25 seconds to defeat the beast. If the beast runs into you, the game ends... ", DialogLayout.Center)
+game.showLongText("You are in a small room, and there is no escape. Stay alive for 25 seconds to defeat the beasts. If a beast runs into you, the game ends... ", DialogLayout.Center)
 pause(100)
 game.showLongText("Ready?", DialogLayout.Center)
 pause(100)
@@ -123,7 +131,7 @@ let EvilPerson1 = sprites.create(assets.image`
 let EvilPerson2 = sprites.create(assets.image`
     EvilPerson
 `, SpriteKind.Enemy)
-let NewFood = sprites.create(assets.image`
+NewFood = sprites.create(assets.image`
     Burger
 `, SpriteKind.Food)
 let New_Food2 = sprites.create(assets.image`

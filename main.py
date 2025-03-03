@@ -7,14 +7,22 @@ def on_countdown_end():
 info.on_countdown_end(on_countdown_end)
 
 def on_on_overlap2(sprite22, otherSprite22):
+    global NewFood3
     info.change_countdown_by(-5)
     sprites.destroy(otherSprite22)
     sprite22.say_text("Got it!")
+    NewFood3 = sprites.create(assets.image("""
+        Burger
+    """), SpriteKind.food)
+    NewFood.y = randint(10, 120)
+    NewFood.x = randint(10, 100)
 sprites.on_overlap(SpriteKind.player, SpriteKind.food, on_on_overlap2)
 
+NewFood3: Sprite = None
+NewFood: Sprite = None
 game.show_long_text("Welcome to my game!", DialogLayout.CENTER)
 pause(100)
-game.show_long_text("You are in a small room, and there is no escape. Stay alive for 25 seconds to defeat the beast. If the beast runs into you, the game ends... ",
+game.show_long_text("You are in a small room, and there is no escape. Stay alive for 25 seconds to defeat the beasts. If a beast runs into you, the game ends... ",
     DialogLayout.CENTER)
 pause(100)
 game.show_long_text("Ready?", DialogLayout.CENTER)
