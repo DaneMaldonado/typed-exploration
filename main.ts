@@ -2,7 +2,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite2, otherS
     game.gameOver(false)
 })
 info.onCountdownEnd(function () {
-    game.gameOver(false)
+    game.gameOver(true)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite2, otherSprite2) {
     info.changeCountdownBy(-10)
@@ -119,10 +119,10 @@ let EvilPerson1 = sprites.create(assets.image`EvilPerson`, SpriteKind.Enemy)
 let EvilPerson2 = sprites.create(assets.image`EvilPerson`, SpriteKind.Enemy)
 let NewFood = sprites.create(assets.image`Burger`, SpriteKind.Food)
 let New_Food2 = sprites.create(assets.image`Burger`, SpriteKind.Food)
-NewFood.x = randint(10, 10)
-NewFood.y = randint(10, 150)
-New_Food2.x = randint(10, 10)
-New_Food2.y = randint(10, 150)
+NewFood.x = 0
+NewFood.y = 0
+New_Food2.x = 0
+New_Food2.y = 0
 info.setScore(0)
 info.startCountdown(25)
 EvilPerson1.x = randint(1, 1)
